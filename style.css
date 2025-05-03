@@ -1,0 +1,222 @@
+/* Reset y base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', 'Segoe UI', sans-serif;
+    background-image: url('assets/fondo.png');
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+blockquote {
+    margin-top: 0px;
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    border-left: 5px solid #ffffffaa;
+    border-radius: 5px;
+    color: #000000;
+}
+
+
+.logo {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    width: 85px;
+    height: auto;
+    z-index: 10;
+}
+
+/* Encabezado principal */
+.main-header {
+    position: relative;
+    width: 100%;
+    background-color: rgba(51, 124, 219, 0.9);
+    color: rgb(166, 233, 42);
+    text-align: center;
+    padding: 5px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.site-title {
+    font-size: 0rem;
+}
+
+/* Subtítulo */
+.subtitle {
+    text-align: center;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Subtítulo elegante */
+.subtitle h2 {
+    font-size: 1.6rem;
+    color: #222;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Texto dentro de las páginas */
+#text {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: justify;
+    padding: 0 10px;
+    line-height: 1.8;
+}
+
+/* Textos de introducción */
+.start-text {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+
+/* Imagen destacada */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.hero-image img {
+    max-width: 90%;
+    max-height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Contenido principal en forma de tarjeta */
+.content-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.start-text {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #444;
+}
+
+#text {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    color: #222;
+}
+/* Alinear listas a la izquierda */
+#text ul {
+    text-align: left;
+    margin: 1em auto;
+    padding-left: 1.5em;
+    list-style-type: disc;
+}
+
+#text li {
+    margin-bottom: 0.6em;
+    line-height: 1.5;
+}
+
+
+/* Botones */
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 25px;
+    font-size: 1rem;
+    background-color: #b5e631;
+    color: rgb(14, 9, 9);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #85a824e3;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Animaciones suaves */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.slide-up {
+    animation: slideUp 0.7s ease-in-out;
+}
+
+.zoom-in {
+    animation: zoomIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Botones con efecto hover */
+button {
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-start {
+    animation: fadeSlideUp 1s ease forwards;
+}
+
+.animate-delay {
+    animation-delay: 0.3s;
+}
