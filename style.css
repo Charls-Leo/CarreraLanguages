@@ -49,25 +49,31 @@ blockquote {
 }
 
 .site-title {
-    font-size: 0rem;
+    font-size: 1rem;
 }
+
 
 /* Subtítulo */
 .subtitle {
     text-align: center;
     margin: 20px auto;
     padding: 0 20px;
+    font-size: 1rem;
 }
 
 /* Subtítulo elegante */
 .subtitle h2 {
+    font-family: 'Bitter', serif;
+    font-weight: 700; /* Negrita */
     font-size: 1.6rem;
     color: #222;
     background-color: rgba(255, 255, 255, 0.85);
     padding: 12px 24px;
     border-radius: 10px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
+    text-transform: none;
+    text-align: center;
+
 }
 
 /* Texto dentro de las páginas */
@@ -82,8 +88,8 @@ blockquote {
 /* Textos de introducción */
 .start-text {
     margin-bottom: 20px;
-    font-size: 1.05rem;
-    color: #444;
+    font-size: 1rem;
+    color: #333;
     line-height: 1.7;
 }
 
@@ -140,7 +146,7 @@ blockquote {
 
 /* Botones */
 .buttons {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 20px;
