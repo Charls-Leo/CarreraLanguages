@@ -10,7 +10,7 @@ const subtitles = [
     "🌐 Conecta con el mundo",
     "✨ Los idiomas como camino y propósito",
     "Precaución, precaución.",
-    "Agradecimientos"
+    "Agradecimientos..."
 ];
 
 
