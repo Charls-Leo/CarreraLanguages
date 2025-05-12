@@ -148,7 +148,7 @@ const pages = [
 ];
 
 const images = [
-    "assets/img1.jpg",
+    "assets/Luna.jpeg",
     "assets/img2.jpg",
     "assets/img3.jpg",
     "assets/img4.jpg",
